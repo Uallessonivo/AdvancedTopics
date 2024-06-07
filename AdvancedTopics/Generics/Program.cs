@@ -1,6 +1,4 @@
-﻿using AdvancedTopics.Generics;
-
-namespace AdvancedTopics
+﻿namespace AdvancedTopics.Generics
 {
     class Program
     {
@@ -17,7 +15,7 @@ namespace AdvancedTopics
             var dictionary = new GenericDictionary<string, Book>();
             dictionary.Add("1234", new Book());
 
-            var number = new Generics.Nullable<int>(5);
+            var number = new Nullable<int>(5);
             Console.WriteLine("Has value? " + number.HasValue);
             Console.WriteLine("Value: " + number.GetValueOrDefault());
         }
